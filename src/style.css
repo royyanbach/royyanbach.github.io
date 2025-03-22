@@ -1,12 +1,23 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer components {
   .section-title {
-    @apply text-2xl font-bold mb-6 inline-flex items-center sticky top-0 bg-gray-50 py-4 z-10 border-b border-gray-100 w-full;
+    @apply text-2xl font-bold mb-6 inline-flex items-center sticky top-0 bg-gray-50 dark:bg-gray-900 py-4 z-10 border-b border-gray-100 dark:border-gray-800 w-full;
+  }
+
+  .about-title {
+    @apply text-xs uppercase tracking-wider text-gray-500 dark:text-gray-500 font-semibold mb-3;
   }
 }
 
 :root{
   --swiper-navigation-sides-offset: -20px;
   --swiper-navigation-size: 32px;
+  --swiper-pagination-bullet-inactive-color: var(--color-gray-500);
+}
+
+.dark {
+  --swiper-pagination-bullet-inactive-color: var(--color-gray-200);
 }
