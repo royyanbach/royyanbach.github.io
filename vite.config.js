@@ -11,7 +11,7 @@ export default defineConfig({
       context: {
         fullName: 'Royyan Bachtiar',
         jobTitle: 'Frontend Engineer',
-        intro: 'Senior Frontend Engineer & Technical Leader with 8+ years of experience building high-performance web applications and leading cross-functional teams. Passionate about developer productivity, performance optimization, and scalable architectures. Adept at React, VueJS, NodeJS, and Microfrontends. Delivering solutions that enhance user experiences with optimized infrastructure costs.',
+        intro: 'Senior Frontend Engineer & Technical Leader with 9+ years of experience building high-performance web applications and leading cross-functional teams. Passionate about developer productivity, performance optimization, and scalable architectures. Adept at React, VueJS, NodeJS, and Microfrontends. Delivering solutions that enhance user experiences with optimized infrastructure costs.',
         contactEmail: 'hello@royyanba.ch',
         contactAddress: 'Jakarta, Indonesia',
         contactGithub: 'https://github.com/royyanbach',
@@ -79,7 +79,7 @@ export default defineConfig({
           },
           {
             title: 'Indonesian Car Stats',
-            description: 'A visalizer of Indonesian used car market statistics based on data crawled from various Indonesian car marketplaces.',
+            description: 'A visualizer of Indonesian used car market statistics based on data crawled from various Indonesian car marketplaces.',
             skills: ['amCharts', 'JavaScript', 'Web Crawler', 'Papaparse', 'DataTable'],
             demo: 'https://www.royyanba.ch/id-car-stats/',
             source: 'https://github.com/royyanbach/id-car-stats',
