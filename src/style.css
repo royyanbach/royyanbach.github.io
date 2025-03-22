@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@layer components {
+  .section-title {
+    @apply text-2xl font-bold mb-6 inline-flex items-center sticky top-0 bg-gray-50 py-4 z-10 border-b border-gray-100 w-full;
+  }
+}
+
+:root{
+  --swiper-navigation-sides-offset: -20px;
+  --swiper-navigation-size: 32px;
+}

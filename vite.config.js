@@ -1,0 +1,196 @@
+import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite';
+import handlebars from 'vite-plugin-handlebars';
+import { ViteMinifyPlugin } from 'vite-plugin-minify'
+
+
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+    handlebars({
+      context: {
+        fullName: 'Royyan Bachtiar',
+        jobTitle: 'Frontend Engineer',
+        intro: 'Senior Frontend Engineer & Technical Leader with 8+ years of experience building high-performance web applications and leading cross-functional teams. Passionate about developer productivity, performance optimization, and scalable architectures. Adept at React, VueJS, NodeJS, and Microfrontends. Delivering solutions that enhance user experiences with optimized infrastructure costs.',
+        contactEmail: 'hello@royyanba.ch',
+        contactAddress: 'Jakarta, Indonesia',
+        contactGithub: 'https://github.com/royyanbach',
+        contactLinkedin: 'https://www.linkedin.com/in/royyanbach',
+        contactX: 'https://x.com/royyanbach',
+        projects: [
+          {
+            title: 'CSS Merge',
+            description: 'Online tool to merge and minify CSS files using cssNano and Web Worker.',
+            skills: ['JavaScript', 'CSS', 'CSSNano', 'Web Worker'],
+            demo: 'https://www.royyanba.ch/css-merge/',
+            source: 'https://github.com/royyanbach/css-merge',
+            image: 'css-merge.jpg',
+          },
+          {
+            title: 'Domination',
+            description: 'Addictive turn-by-turn multiplayer game for JS13K 2018 submission.',
+            skills: ['JavaScript', 'CSS', 'CSSNano', 'Web Worker'],
+            demo: 'https://www.royyanba.ch/domination/',
+            source: 'https://github.com/royyanbach/domination',
+            image: 'domination.jpg',
+          },
+          {
+            title: 'Lumosity Skyrise',
+            description: 'A clone of the popular Lumosity game Skyrise built with gsap, howler, and pixi.',
+            skills: ['JavaScript', 'gsap', 'howler', 'pixi'],
+            demo: 'https://www.royyanba.ch/lumosity-skyrise/',
+            source: 'https://github.com/royyanbach/lumosity-skyrise',
+            image: 'lumosity-skyrise.jpg',
+          },
+          {
+            title: 'Coup',
+            description: 'A clone of the popular Coup game built with React and WebSocket.',
+            skills: ['React', 'WebSocket', 'NodeJS', 'Express'],
+            demo: 'https://www.royyanba.ch/coup/',
+            source: 'https://github.com/royyanbach/coup',
+            wip: true,
+            image: 'coup.jpg',
+          },
+          {
+            title: 'Stock News Bot',
+            description: 'A bot that crawl stock news and provide me with summary of the news.',
+            skills: ['NodeJS', 'Telegram Bot', 'Web Crawler', 'OpenAI', 'Google Cloud Tasks', 'Google Cloud Run'],
+            demo: 'https://t.me/+uCaCGUEVBDtjODM1',
+            source: 'https://github.com/royyanbach/stocknewsbot',
+            archived: true,
+            image: 'stocknewsbot.jpg',
+          },
+          {
+            title: 'Radio',
+            description: 'Online radio player of my favorite radio station featuring audio visualizer and metadata display.',
+            skills: ['React', 'Audio Visualizer', 'Audio Stream'],
+            demo: 'https://www.royyanba.ch/radio/',
+            source: 'https://github.com/royyanbach/radio',
+            archived: true,
+            image: 'radio.jpg',
+          },
+          {
+            title: 'Pokedex',
+            description: 'A simple pokedex app built with React and PokeAPI.',
+            skills: ['React'],
+            demo: 'https://www.royyanba.ch/pokedex/',
+            source: 'https://github.com/royyanbach/pokedex',
+            image: 'pokedex.jpg',
+          },
+          {
+            title: 'Indonesian Car Stats',
+            description: 'A visalizer of Indonesian used car market statistics based on data crawled from various Indonesian car marketplaces.',
+            skills: ['amCharts', 'JavaScript', 'Web Crawler', 'Papaparse', 'DataTable'],
+            demo: 'https://www.royyanba.ch/id-car-stats/',
+            source: 'https://github.com/royyanbach/id-car-stats',
+            archived: true,
+            image: 'id-car-stats.jpg',
+          },
+        ],
+        workExperience: [
+          {
+            period: 'Aug 2023 - Present',
+            title: 'Senior Frontend Engineer',
+            company: 'MoneyHero Group',
+            description: 'Transformed key insurance pages, significantly speeding up how quickly users could see results and simplifying interactions. By moving these pages to an easy-to-use platform, I also reduced company costs and improved overall user satisfaction.',
+            skills: [
+              'JavaScript',
+              'TypeScript',
+              'React',
+              'Next.js',
+              'Tailwind CSS',
+              'HubSpot',
+            ],
+          },
+          {
+            period: 'Jan 2022 - Jul 2023',
+            title: 'Staff Engineer',
+            company: 'Kargo Technologies',
+            description: 'Guided teams to build faster, cost-efficient software and streamlined processes to help teams deliver quickly. I created clear dashboards to improve visibility of operations, simplified systems that drastically sped up deployments, and mentored junior talent, enabling the company to operate smoothly at lower cost.',
+            skills: [
+              'JavaScript',
+              'TypeScript',
+              'React',
+              'Styled Components',
+              'Management',
+            ],
+          },
+          {
+            period: 'Jan 2021 - Dec 2021',
+            title: 'Technical Lead',
+            company: 'Kargo Technologies',
+            description: 'Led a team of five engineers to rapidly deliver high-quality features, standardized processes, and dramatically improved the speed of software updates. My work significantly cut down development and deployment times, making projects smoother, faster, and safer to launch.',
+            skills: [
+              'JavaScript',
+              'TypeScript',
+              'React',
+              'Styled Components',
+              'Management',
+            ],
+          },
+          {
+            period: 'Oct 2020 - Dec 2020',
+            title: 'Software Development Engineer II, Frontend',
+            company: 'Kargo Technologies',
+            description: 'Modernized and optimized internal tools, enhancing usability and efficiency. I also initiated improvements that allowed the software to be more flexible and scalable, laying a solid foundation for future growth.',
+            skills: [
+              'JavaScript',
+              'React',
+              'SCSS',
+            ],
+          },
+          {
+            period: 'Jan 2020 - Sep 2020',
+            title: 'Associate Software Architect, Frontend',
+            company: 'Bukalapak',
+            description: 'Led a small, strategic team to enhance the speed, reliability, and scalability of Bukalapak’s web architecture. By improving page load performance, I greatly enhanced user experience, setting up the platform to smoothly handle future growth.',
+            skills: [
+              'JavaScript',
+              'VueJS',
+              'NodeJS',
+              'Microfrontend',
+              'Microservices',
+              'Management',
+            ],
+          },
+          {
+            period: 'Oct 2019 - Dec 2020',
+            title: 'Senior Frontend Engineer',
+            company: 'Bukalapak',
+            description: 'Shaped the foundational architecture to ensure Bukalapak’s website was fast, scalable, and user-friendly. I also actively promoted knowledge-sharing between teams, contributing to a collaborative and innovative work environment.',
+            skills: [
+              'JavaScript',
+              'VueJS',
+              'NodeJS',
+              'Microfrontend',
+              'SCSS',
+            ],
+          },
+          {
+            period: 'Mar 2016 - Sep 2019',
+            title: 'Frontend Engineer',
+            company: 'Bukalapak',
+            description: 'Created attractive, search-optimized landing pages and dashboards that significantly boosted organic traffic and user engagement. My contributions directly improved user experience and business growth across various financial products.',
+            skills: [
+              'JavaScript',
+              'VueJS',
+              'jQuery',
+              'SCSS',
+            ],
+          },
+          {
+            period: 'Mar 2013 - Feb 2016',
+            title: 'Web Developer & Designer',
+            company: 'Freelance',
+            description: 'Built intuitive dashboards and government-related websites, simplifying complex administrative tasks for educational institutions, regional governments, and companies. My work helped modernize and streamline their processes, making daily operations easier and more efficient.',
+            skills: [
+              'JavaScript',
+              'jQuery',
+            ],
+          },
+        ]
+      },
+    }),
+    ViteMinifyPlugin(),
+  ],
+})
