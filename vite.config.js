@@ -22,8 +22,8 @@ export default defineConfig({
             title: 'CSS Merge',
             description: 'Online tool to merge and minify CSS files using cssNano and Web Worker.',
             skills: ['JavaScript', 'CSS', 'CSSNano', 'Web Worker'],
-            demo: 'https://www.royyanba.ch/css-merge/',
-            source: 'https://github.com/royyanbach/css-merge',
+            demo: 'https://www.royyanba.ch/cssmerge/',
+            source: 'https://github.com/royyanbach/cssmerge',
             image: 'css-merge.jpg',
           },
           {
