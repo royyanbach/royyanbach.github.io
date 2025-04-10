@@ -27,6 +27,13 @@ export default defineConfig({
             image: 'css-merge.jpg',
           },
           {
+            title: 'Narra Kids',
+            description: 'A platform for children to read and listen to stories.',
+            skills: ['React', 'NextJS', 'TailwindCSS', 'Sanity', 'Google Cloud Run'],
+            demo: 'https://www.narra.kids/',
+            image: 'narra-kids.jpg',
+          },
+          {
             title: 'Domination',
             description: 'Addictive turn-by-turn multiplayer game for JS13K 2018 submission.',
             skills: ['JavaScript', 'CSS', 'CSSNano', 'Web Worker'],
@@ -154,7 +161,7 @@ export default defineConfig({
             ],
           },
           {
-            period: 'Oct 2019 - Dec 2020',
+            period: 'Oct 2019 - Dec 2019',
             title: 'Senior Frontend Engineer',
             company: 'Bukalapak',
             description: 'Shaped the foundational architecture to ensure Bukalapak’s website was fast, scalable, and user-friendly. I also actively promoted knowledge-sharing between teams, contributing to a collaborative and innovative work environment.',
