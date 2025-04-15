@@ -34,6 +34,14 @@ export default defineConfig({
             image: 'narra-kids.jpg',
           },
           {
+            title: 'LinkedIn Surf',
+            description: 'A Chrome extension that automates job searches on LinkedIn based on given criterias.',
+            skills: ['JavaScript', 'Chrome Extension', 'Google Sheets API'],
+            demo: 'https://www.royyanba.ch/linkedin-surf/',
+            source: 'https://github.com/royyanbach/linkedin-surf',
+            image: 'linkedin-surf.jpg',
+          },
+          {
             title: 'Domination',
             description: 'Addictive turn-by-turn multiplayer game for JS13K 2018 submission.',
             skills: ['JavaScript', 'CSS', 'CSSNano', 'Web Worker'],
